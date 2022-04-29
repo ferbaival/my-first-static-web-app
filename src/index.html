@@ -20,7 +20,16 @@
   };
 </script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-
+<script>
+  function IniciarFacebook() {
+    FB.ui({
+      display: 'popup',
+      method: 'share',
+      href: 'https://www.youtube.com/user/bodacinema',
+    } );
+  }
+  IniciarFacebook();
+  </script>
 <main>
   
     <h1>Sharing using FB.ui() Dialogs</h1>
