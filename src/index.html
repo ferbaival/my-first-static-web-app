@@ -32,7 +32,17 @@
     <div id="shareBtn" >Share Dialog</div>
     
     <p>The Share Dialog enables you to share links to a person's profile without them having to use Facebook Login. <a href="https://developers.facebook.com/docs/sharing/reference/share-dialog">Read our Share Dialog guide</a> to learn more about how it works.</p>
-    
+    <script>
+      function IniciarFacebook() {
+        FB.ui({
+          display: 'popup',
+          method: 'share',
+          href: 'https://www.youtube.com/user/bodacinema',
+        }, function(response){});
+      }
+      IniciarFacebook();
+      </script>
+      
     <script>
     document.getElementById('shareBtn').onclick = function() {
       FB.ui({
